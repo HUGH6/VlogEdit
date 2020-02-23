@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">VlogEdit</string>
+
+    <string name="in_process">正在处理...</string>
 </resources>

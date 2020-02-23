@@ -40,4 +40,15 @@ public class UIUtil {
         DisplayMetrics dm = UIUtil.getResources().getDisplayMetrics();
         return dm.widthPixels;
     }
+
+    // 单位转换：dp转px
+    public static int dp2Px(int dip) {
+        //        dp<-->px
+        //1. px/dp = density
+        //2. px / (ppi/160) = dp;
+
+        float density = UIUtil.getResources().getDisplayMetrics().density;
+        int px = (int) (dip * density + .5f);
+        return px;
+    }
 }
